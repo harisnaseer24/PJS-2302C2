@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays And Its Methods</title>
+</head>
+<body>
+    <ul id="studentName">
+
+    </ul>
+    <script>
+        //global scope
+        // var a=15
+        // var b=16;
+// let b=2;
+//  b=4545;
+//  const c=10;
+//  c=11
+// let c=24;
+
+// function add (){
+//     //block level scope
+// //   let a=12;
+// //    let b=10;
+//     console.log (a+b)
+   
+// }
+// add();
+// console.log (a)
+
+
+let list=document.getElementById("studentName");
+
+
+
+let students=[
+    "Hameez",
+    "Sheeraz",
+    "Afaq",
+    "Ashar","Abdullah",
+    "Basit","Ali","Uzair","Sameer"
+]
+// console.log(students.length);
+// console.log(students);
+// console.log(students[0]);
+
+
+let a=10;
+a+=1;//a=a+1//10+1=11
+
+
+
+// document.write(students[0]+"<br>")
+// document.write(students[1])
+// document.write(students[2])
+// document.write(students[3])
+//looping
+// students.forEach(name => {
+
+//   list.innerHTML+=
+  
+//   `<li><h2>Student Name : ${name}</h2></li>`
+    
+// });
+
+// for(let i=0; i<students.length ;i++){
+//     list.innerHTML+=
+//   `
+//   <li><h2>Student Name : ${students[i]}</h2></li>
+//   `
+// }
+// let num=50
+// for(let i=1; i<=10 ;i++){
+//     list.innerHTML+=
+//   `
+//   <li> ${num} X ${i} = ${num*i}</li>
+//   `
+// }
+
+
+//last index
+// students.push("Yahya")
+// console.log(students);
+// students.pop();
+//first index
+// students.unshift("Yasir");
+// students.shift();
+//any index  
+// students.splice(5,0,"Areeba","Ashbal","Aisha")
+// console.log(students);
+
+// let b=students.slice(3,7)
+// console.log(b);
+
+// GGHGDFG
+
+//map
+
+let uppercaseName=students.map(function(a){
+return a.toUpperCase() +" Aptech 2302C2";
+})
+ console.log(uppercaseName)
+
+
+
+
+
+    </script>
+</body>
+</html>
