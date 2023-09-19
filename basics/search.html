@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  
+
   <body>
-    <input type="search" placeholder="search here...!" id="searchbox" />
+    <input type="search" placeholder="search here...!" id="searchbox"/>
 
     <ol id="list">
 
@@ -17,7 +17,6 @@
       let movies = [
         "The Meg 2", //the meg 2=a.includes(t)       t=query=>result=[the meg 2]
         "The Meg", //the meg=a.includes(query)       t=query=>result=[the meg 2, the meg]
-        
         "Extraction 2",
         "Mission Impossible: Dead Reckoning",
         "Mission Impossible: Ghost Protocol",
@@ -139,12 +138,12 @@
       let Search = () => {
 
         let query = searchbox.value.toLowerCase();
-        //    console.log(query)  ;
+          //  console.log(query)  ;
 
-        let result = newMovies.filter(function (a) {
-          if (a.includes(query)) return a;
+        let result = newMovies.filter((movie)=>{
+          if(movie.includes(query)) return movie; //"the" meg == "the"
         });
-        // console.log(result);
+        console.log(result);
 
 
 
